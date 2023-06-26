@@ -54,7 +54,7 @@
             this.btnDeny.Name = "btnDeny";
             this.btnDeny.Size = new System.Drawing.Size(90, 32);
             this.btnDeny.TabIndex = 2;
-            this.btnDeny.Text = "Отклонить";
+            this.btnDeny.Text = "Deny";
             this.btnDeny.UseVisualStyleBackColor = false;
             this.btnDeny.Click += new System.EventHandler(this.btnDeny_Click);
             // 
@@ -66,7 +66,7 @@
             this.btnAccept.Name = "btnAccept";
             this.btnAccept.Size = new System.Drawing.Size(86, 32);
             this.btnAccept.TabIndex = 2;
-            this.btnAccept.Text = "Принять";
+            this.btnAccept.Text = "Accept";
             this.btnAccept.UseVisualStyleBackColor = false;
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
             // 
