@@ -34,7 +34,7 @@ namespace Steam_Desktop_Authenticator
         {
             // Let the user select the config dir
             FolderBrowserDialog folderBrowser = new FolderBrowserDialog();
-            folderBrowser.Description = "Выберите папку старой установки Steam Desktop Authenticator";
+            folderBrowser.Description = "Select the folder of your old Steam Desktop Authenticator install";
             DialogResult userClickedOK = folderBrowser.ShowDialog();
 
             if (userClickedOK == DialogResult.OK)
@@ -55,8 +55,7 @@ namespace Steam_Desktop_Authenticator
                 else
                 {
                     // Could not find either.
-                    MessageBox.Show("Эта папка не содержит manifest.json или папку MaFiles.\nПожалуйста выберите место, где был установлен Steam Desktop Authenticator.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    MessageBox.Show("This folder does not contain either a manifest.json or an maFiles folder.\nPlease select the location where you had Steam Desktop Authenticator installed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);                    return;
                 }
 
                 // Copy the contents of the config dir to the new config dir
@@ -80,7 +79,7 @@ namespace Steam_Desktop_Authenticator
                 man.Save();
 
                 // All done!
-                MessageBox.Show("Все аккаунты и настройки импортированы! Нажмите OK для продолжения.", "Импорт учетных записей", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("All accounts and settings have been imported! Click OK to continue.", "Import accounts", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 showMainForm();
             }
 
