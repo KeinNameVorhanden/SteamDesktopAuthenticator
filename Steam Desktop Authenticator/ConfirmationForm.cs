@@ -27,12 +27,7 @@ namespace Steam_Desktop_Authenticator
             this.Text = String.Format("Trade Confirmations - {0}", steamAccount.AccountName);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void refreshConfirmations(object sender, EventArgs e)
         {
             ReloadTrades();
         }
@@ -63,7 +58,7 @@ namespace Steam_Desktop_Authenticator
                         var summary = "";
 
                         if (conf.summary != null)
-                            conf.summary.ForEach(x => summary += x + Environment.NewLine);
+                            conf.summary.ForEach(x => summary += x + Environment.NewLine + Environment.NewLine);
 
                         Bitmap avatar = new Bitmap(10, 10);
 
