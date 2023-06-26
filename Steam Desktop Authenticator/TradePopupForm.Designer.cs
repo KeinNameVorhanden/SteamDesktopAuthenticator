@@ -104,7 +104,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TradePopupForm";
-            this.Text = "Новое предложение";
+            this.Text = "New Confirmations";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.TradePopupForm_Load);
             this.ResumeLayout(false);
