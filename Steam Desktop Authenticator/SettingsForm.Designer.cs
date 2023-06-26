@@ -46,8 +46,7 @@
             this.chkPeriodicChecking.Name = "chkPeriodicChecking";
             this.chkPeriodicChecking.Size = new System.Drawing.Size(224, 56);
             this.chkPeriodicChecking.TabIndex = 0;
-            this.chkPeriodicChecking.Text = "Периодически проверяйте наличие \r\nновых подтверждений\r\nи показать всплывающее окн" +
-    "о, \r\nкогда они приходят";
+            this.chkPeriodicChecking.Text = "Periodically check for new confirmations\r\nand show a popup when they arrive";
             this.chkPeriodicChecking.UseVisualStyleBackColor = true;
             this.chkPeriodicChecking.CheckedChanged += new System.EventHandler(this.chkPeriodicChecking_CheckedChanged);
             // 
@@ -60,7 +59,7 @@
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(224, 38);
             this.btnSave.TabIndex = 1;
-            this.btnSave.Text = "Сохранить";
+            this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -88,7 +87,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Секунды между проверкой \nдля подтверждения";
+            this.label1.Text = "Seconds between checking \r\nfor confirmations";
             // 
             // chkCheckAll
             // 
@@ -97,7 +96,7 @@
             this.chkCheckAll.Name = "chkCheckAll";
             this.chkCheckAll.Size = new System.Drawing.Size(199, 30);
             this.chkCheckAll.TabIndex = 4;
-            this.chkCheckAll.Text = "Проверка всех учетных записей \r\nна наличие предложений";
+            this.chkCheckAll.Text = "Check all accounts for confirmations";
             this.chkCheckAll.UseVisualStyleBackColor = true;
             // 
             // chkConfirmMarket
@@ -107,7 +106,7 @@
             this.chkConfirmMarket.Name = "chkConfirmMarket";
             this.chkConfirmMarket.Size = new System.Drawing.Size(205, 30);
             this.chkConfirmMarket.TabIndex = 5;
-            this.chkConfirmMarket.Text = "Автоматическое подтверждение \r\nSteam ТП сделок";
+            this.chkConfirmMarket.Text = "Auto-confirm market transactions";
             this.chkConfirmMarket.UseVisualStyleBackColor = true;
             this.chkConfirmMarket.CheckedChanged += new System.EventHandler(this.chkConfirmMarket_CheckedChanged);
             // 
@@ -118,7 +117,7 @@
             this.chkConfirmTrades.Name = "chkConfirmTrades";
             this.chkConfirmTrades.Size = new System.Drawing.Size(205, 30);
             this.chkConfirmTrades.TabIndex = 6;
-            this.chkConfirmTrades.Text = "Автоматическое подтверждение \r\nсделок";
+            this.chkConfirmTrades.Text = "Auto-confirm trades";
             this.chkConfirmTrades.UseVisualStyleBackColor = true;
             this.chkConfirmTrades.CheckedChanged += new System.EventHandler(this.chkConfirmTrades_CheckedChanged);
             // 
@@ -140,7 +139,7 @@
             this.MaximizeBox = false;
             this.Name = "SettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Настройки";
+            this.Text = "Settings";
             this.Load += new System.EventHandler(this.SettingsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numPeriodicInterval)).EndInit();
             this.ResumeLayout(false);
