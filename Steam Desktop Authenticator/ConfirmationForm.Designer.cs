@@ -63,7 +63,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(787, 34);
             this.button2.TabIndex = 0;
-            this.button2.Text = "Обновить";
+            this.button2.Text = "Refresh";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -106,27 +106,27 @@
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "Тип";
+            this.Column1.HeaderText = "Type";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Кому";
+            this.Column2.HeaderText = "To";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "Аватар";
+            this.Column3.HeaderText = "Avatar";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Время создания";
+            this.Column4.HeaderText = "Timestamp";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -135,20 +135,20 @@
             // 
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column5.HeaderText = "Информация";
+            this.Column5.HeaderText = "Information";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "Принять";
+            this.Column6.HeaderText = "Accept";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "Отклонить";
+            this.Column7.HeaderText = "Deny";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
             // 
@@ -164,7 +164,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConfirmationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Список предложений";
+            this.Text = "Suggestions";
             this.Load += new System.EventHandler(this.ConfirmationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
