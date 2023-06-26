@@ -30,10 +30,9 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfirmationForm));
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new Steam_Desktop_Authenticator.DoubleBufferedDataGridView();
+            this.dataGridView1 = new DoubleBufferedDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -46,26 +45,16 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(458, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
+            this.button2.Name = "refresh_button";
             this.button2.Size = new System.Drawing.Size(787, 34);
             this.button2.TabIndex = 0;
             this.button2.Text = "Refresh";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.refreshConfirmations);
             // 
             // label1
             // 
@@ -97,8 +86,9 @@
             this.dataGridView1.Location = new System.Drawing.Point(0, 34);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 40;
-            this.dataGridView1.RowTemplate.Height = 100;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowTemplate.Height = 40;
+            this.dataGridView1.ColumnHeadersHeight = 40;
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.Size = new System.Drawing.Size(787, 356);
             this.dataGridView1.TabIndex = 1;
@@ -107,27 +97,27 @@
             // Column1
             // 
             this.Column1.HeaderText = "Type";
-            this.Column1.Name = "Column1";
+            this.Column1.Name = "col_type";
             this.Column1.ReadOnly = true;
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "To";
-            this.Column2.Name = "Column2";
+            this.Column2.Name = "col_to";
             this.Column2.ReadOnly = true;
             this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Avatar";
-            this.Column3.Name = "Column3";
+            this.Column3.Name = "col_avatar";
             this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Timestamp";
-            this.Column4.Name = "Column4";
+            this.Column4.Name = "col_timestamp";
             this.Column4.ReadOnly = true;
             this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
@@ -135,21 +125,21 @@
             // 
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column5.HeaderText = "Information";
-            this.Column5.Name = "Column5";
+            this.Column5.HeaderText = "Summary";
+            this.Column5.Name = "col_summary";
             this.Column5.ReadOnly = true;
             this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Accept";
-            this.Column6.Name = "Column6";
+            this.Column6.Name = "col_accept";
             this.Column6.ReadOnly = true;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Deny";
-            this.Column7.Name = "Column7";
+            this.Column7.Name = "col_deny";
             this.Column7.ReadOnly = true;
             // 
             // ConfirmationForm
@@ -164,7 +154,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConfirmationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Suggestions";
+            this.Text = "Pending Confirmations";
             this.Load += new System.EventHandler(this.ConfirmationForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -173,8 +163,6 @@
 
         #endregion
 
-       
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private DoubleBufferedDataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
