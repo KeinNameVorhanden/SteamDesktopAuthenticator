@@ -427,8 +427,8 @@ namespace Steam_Desktop_Authenticator
                         Confirmation[] tmp = acc.FetchConfirmations();
                         foreach (var conf in tmp)
                         {
-                            if ((conf.ConfType == Confirmation.ConfirmationType.MarketSellTransaction && manifest.AutoConfirmMarketTransactions) ||
-                                (conf.ConfType == Confirmation.ConfirmationType.Trade && manifest.AutoConfirmTrades))
+                            if ((conf.conf_type == Confirmation.ConfirmationType.MarketSellTransaction && manifest.AutoConfirmMarketTransactions) ||
+                                (conf.conf_type == Confirmation.ConfirmationType.Trade && manifest.AutoConfirmTrades))
                             {
                                 if (!autoAcceptConfirmations.ContainsKey(acc))
                                     autoAcceptConfirmations[acc] = new List<Confirmation>();
