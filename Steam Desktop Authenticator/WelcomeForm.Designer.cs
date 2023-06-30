@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnImportConfig = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnAndroidImport = new System.Windows.Forms.Button();
             this.btnJustStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -53,7 +52,8 @@
             this.btnImportConfig.Name = "btnImportConfig";
             this.btnImportConfig.Size = new System.Drawing.Size(366, 71);
             this.btnImportConfig.TabIndex = 1;
-            this.btnImportConfig.Text = "I already setup Steam Desktop Authenticator in another location on this PC and I want to import its account(s).\r\n";
+            this.btnImportConfig.Text = "I already setup Steam Desktop Authenticator in another location on this PC and I " +
+    "want to import its account(s).\r\n";
             this.btnImportConfig.UseVisualStyleBackColor = true;
             this.btnImportConfig.Click += new System.EventHandler(this.btnImportConfig_Click);
             // 
@@ -67,21 +67,10 @@
             this.label2.Text = "Select an item to get started:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnAndroidImport
-            // 
-            this.btnAndroidImport.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAndroidImport.Location = new System.Drawing.Point(12, 211);
-            this.btnAndroidImport.Name = "btnAndroidImport";
-            this.btnAndroidImport.Size = new System.Drawing.Size(366, 51);
-            this.btnAndroidImport.TabIndex = 3;
-            this.btnAndroidImport.Text = "I want to import from my Android Device";
-            this.btnAndroidImport.UseVisualStyleBackColor = true;
-            this.btnAndroidImport.Click += new System.EventHandler(this.btnAndroidImport_Click);
-            // 
             // btnJustStart
             // 
             this.btnJustStart.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJustStart.Location = new System.Drawing.Point(12, 268);
+            this.btnJustStart.Location = new System.Drawing.Point(12, 211);
             this.btnJustStart.Name = "btnJustStart";
             this.btnJustStart.Size = new System.Drawing.Size(366, 51);
             this.btnJustStart.TabIndex = 4;
@@ -93,9 +82,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 325);
+            this.ClientSize = new System.Drawing.Size(390, 277);
             this.Controls.Add(this.btnJustStart);
-            this.Controls.Add(this.btnAndroidImport);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnImportConfig);
             this.Controls.Add(this.label1);
@@ -116,7 +104,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnImportConfig;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnAndroidImport;
         private System.Windows.Forms.Button btnJustStart;
     }
 }
