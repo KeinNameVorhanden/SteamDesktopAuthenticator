@@ -231,12 +231,6 @@ namespace Steam_Desktop_Authenticator
             loadAccountsList();
         }
 
-        private void menuImportAndroid_Click(object sender, EventArgs e)
-        {
-            new PhoneExtractForm().ShowDialog();
-            loadAccountsList();
-        }
-
         private void menuSettings_Click(object sender, EventArgs e)
         {
             new SettingsForm().ShowDialog();
