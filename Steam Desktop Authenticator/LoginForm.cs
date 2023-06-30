@@ -158,11 +158,11 @@ namespace Steam_Desktop_Authenticator
 
                             if (linker._get_phone_number())
                             {
-                                MessageBox.Show("Подтвердите письмо на почте и нажмите ОК");
+                                MessageBox.Show("EMail was sent to your Mail\nYOU NEED TO CONFIRM\n'ADD PHONE NUMBER'\nBEFORE GOING FORWARD");
 
                                 linker._email_verification();
 
-                                InputForm smsCodeForm = new InputForm("Пожалуйста, введите SMS-код, отправленный на ваш телефон.");
+                                InputForm smsCodeForm = new InputForm("Please input the SMS code sent to your phone.");
                                 smsCodeForm.ShowDialog();
                                 if (smsCodeForm.Canceled)
                                 {
@@ -172,7 +172,7 @@ namespace Steam_Desktop_Authenticator
 
                                 if (linker._get_sms_code(smsCodeForm.txtBox.Text))
                                 {
-                                    MessageBox.Show("Номер успешно привязан к аккаунту. Продолжаем получать maFile..");
+                                    MessageBox.Show("Handling maFile..");
                                 }
                             }
                             break;
