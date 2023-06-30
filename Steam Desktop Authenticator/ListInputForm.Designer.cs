@@ -74,7 +74,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListInputForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Выбрать один";
+            this.Text = "List Input";
             this.Load += new System.EventHandler(this.ListInputForm_Load);
             this.ResumeLayout(false);
 
